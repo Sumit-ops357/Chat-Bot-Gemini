@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: #1e1e2f;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #f5f5f5;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.messages {
+  background: #2c2c3e;
+  padding: 1rem;
+  border-radius: 12px;
+  min-height: 120px;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 1rem;
+}
+
+.bot-message {
+  background: #3b3b5c;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-field {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.send-btn {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #5a6fd6;
+}
+
+.send-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
